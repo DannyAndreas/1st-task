@@ -1,0 +1,261 @@
+@font-face {
+    font-family: 'Barlow-Thin';
+    src: url(/fonts/Barlow-Thin.otf);
+} 
+@font-face {    font-family: 'Barlow-Bold';
+    src: url(/fonts/Barlow-Bold.otf);
+}
+
+
+main {
+    position: absolute;
+    display: flex;
+    
+    width: 1440px;
+    text-align: left;
+    font-family: 'Barlow-Thin';
+}
+
+h1{
+    margin-left: 2px;
+    font-size: 31px;
+}
+
+h2{
+    
+    font-size: 21.5px;
+}
+
+
+.or {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 10px;
+
+}
+
+.or:before,
+.or:after {
+    content: "";
+    display: inline-block;
+    width: 130px;
+    height: 1px;
+    background-color: #AFAFAF;
+    margin-right: 7px;
+    margin-left: 7px;
+}
+
+
+
+
+
+
+
+
+.text {
+    background-color: #f9f9f9;
+    width: 100%;
+    padding: 62px;
+}
+
+.preButton {
+    padding-bottom: 20px; 
+}
+
+
+.FbLd {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.Facebook
+{   font-size: 16px;
+    background-color: #255A9B;
+    color: #ffffff;
+    width: 265px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.Linkedin
+{   font-size: 16px;
+    background-color: #0076B6;
+    color: #ffffff;
+    width: 265px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+
+.FbLogo,
+.LdLogo
+ {
+    height: 20px;
+    margin-left: 10px;
+    
+}
+
+.RegButtonText {
+    margin-left: 12px;
+
+}
+
+.EmailPhoneForm {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+input{
+    box-sizing: border-box;
+    width: inherit;
+    height: inherit;
+    border: 0;
+    
+    
+}
+
+
+
+.Email,
+.Phone
+{  
+    font-size: 16px;
+    border: 2px solid #AFAFAF;
+    width: 260px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+.Email_text, .Phone_text {
+    margin-left: 10px;
+    width: initial;
+    height: initial;
+    font-weight: bold;
+    font-size: 14px;
+    
+   
+}
+.Phone:hover {border-left: 2px blue solid;}
+.Email:hover {border-left: 2px blue solid;}
+
+.investor-type{
+    padding: 30px 0 30px 0;
+}
+
+.investor-cheackbox{
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+
+.checkbox{
+    margin-right: 10px;
+}
+
+.info{
+height: 10px;
+width: 12px;
+margin-left: 8px;
+}
+
+
+.EmailPhoneForm:hover .EmailPhoneForm {
+ background-color: #0076B6;
+}
+
+.section{ 
+    margin-top: 120px;
+    
+    
+ 
+}
+
+
+  
+  .layer {
+    background: #250707;
+  }
+  
+
+.checkbox-inp {
+    border: 2px transparent solid;
+}
+.info {visibility: hidden;}
+
+
+.checkbox-inp:hover{
+    border: 2px blue solid;
+    border-radius: 5%;
+}
+
+.checkbox-inp:hover .info{
+    visibility: visible;
+}
+
+.textt{
+    visibility: hidden;
+}
+.info:hover .textt{
+    visibility: visible;
+}
+
+
+  
+  .section:hover .layer {
+   
+    border: 2px solid #F90;
+  }
+
+  .main_logo{
+    margin-top: 2em;
+    margin-left: 3em;
+    width: 9em;
+    position: absolute;
+    color: #ffffff;
+  }
+
+  [data-title] {
+    position: relative; /* Относительное позиционирование */ 
+    cursor: help; /* Меняем курсор на справочный */
+  }
+  [data-title]::after {
+    content: attr(data-title); /* Выводим текст из атрибута data-title */
+    position: absolute; /* Абсолютное позиционирование */
+    left: 0; top: 2em; /* Положение подсказки */
+    opacity: 0; /* Скрываем подсказку, делая её прозрачной */
+    transition: 0.5s; /* Время появления подсказки */
+    pointer-events: none; /* Подсказка не реагирует на курсор */
+    background: white; /* Синий цвет фона */
+    color: #aaaaaa; /* Белый цвет текста */
+    padding: 0.5em; /* Поля вокруг текста */
+    border-radius: 5px;
+  }
+  [data-title]:hover::after {
+    opacity: 1; /* Показываем подсказку */
+  }
+
+
+
+
+
+
+.reg_button {
+    margin-top: 120px;
+    padding: 20px 90px 20px 90px;
+    color: white;
+    background-color: #3698FB;
+    border-radius: 10px;
+    border: none;
+}
+.reg_button:active{border: 5px red solid;}
